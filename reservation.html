@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- Meta Tags Essential -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Pilih cabang Tomoro Coffee untuk menyelesaikan reservasi Anda">
+    <meta name="robots" content="noindex, nofollow">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#8B4513">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/tomoro.png">
+    <link rel="apple-touch-icon" href="assets/icons/tomoro.png">
+    
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/reservation.css">
+    
+    <!-- Title -->
+    <title>Konfirmasi Reservasi - Tomoro Coffee Bangka</title>
+</head>
+
+<body class="reservation-page">
+    
+    <!-- ============================================ -->
+    <!--              LOADING SCREEN                  -->
+    <!-- ============================================ -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <div class="coffee-cup-loader">
+                    <div class="cup-body">
+                        <div class="coffee-liquid"></div>
+                        <div class="coffee-steam">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="cup-handle"></div>
+                </div>
+            </div>
+            <p class="loader-text">Memuat data reservasi<span class="loading-dots"></span></p>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!--              BACKGROUND EFFECTS              -->
+    <!-- ============================================ -->
+    <div class="page-background">
+        <!-- Animated Gradient -->
+        <div class="bg-gradient-animated"></div>
+        
+        <!-- Floating Coffee Beans -->
+        <div class="floating-beans">
+            <div class="bean bean-1">☕</div>
+            <div class="bean bean-2">☕</div>
+            <div class="bean bean-3">☕</div>
+            <div class="bean bean-4">☕</div>
+            <div class="bean bean-5">☕</div>
+        </div>
+        
+        <!-- Particle Grid -->
+        <div class="particle-grid"></div>
+        
+        <!-- Decorative Circles -->
+        <div class="deco-circle circle-1"></div>
+        <div class="deco-circle circle-2"></div>
+        <div class="deco-circle circle-3"></div>
+    </div>
+
+    <!-- ============================================ -->
+    <!--              MAIN CONTAINER                  -->
+    <!-- ============================================ -->
+    <div class="reservation-wrapper">
+        
+        <!-- ============================================ -->
+        <!--                  HEADER                      -->
+        <!-- ============================================ -->
+        <header class="reservation-header">
+            <div class="header-container">
+                <!-- Back Button -->
+                <a href="index.html" class="back-button" aria-label="Back to Home">
+                    <i class="fas fa-arrow-left"></i>
+                    <span>Kembali</span>
+                </a>
+                
+                <!-- Logo -->
+                <a href="index.html" class="header-logo">
+                    <div class="logo-icon">
+                        <img src="assets/icons/tomoro.png" alt="Tomoro Coffee Logo">
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-main">TOMORO</span>
+                        <span class="logo-sub">COFFEE</span>
+                    </div>
+                </a>
+                
+                
+                <!-- Help Button -->
+                <button class="help-button" id="helpBtn" aria-label="Help">
+                    <i class="fas fa-question-circle"></i>
+                    <span>Bantuan</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- ============================================ -->
+        <!--              PROGRESS STEPS                  -->
+        <!-- ============================================ -->
+        <div class="progress-steps">
+            <div class="step completed">
+                <div class="step-icon">
+                    <i class="fas fa-check"></i>
+                </div>
+                <span class="step-label">Isi Data</span>
+            </div>
+            <div class="step-line completed"></div>
+            <div class="step active">
+                <div class="step-icon">
+                    <span>2</span>
+                </div>
+                <span class="step-label">Pilih Cabang</span>
+            </div>
+            <div class="step-line"></div>
+            <div class="step">
+                <div class="step-icon">
+                    <span>3</span>
+                </div>
+                <span class="step-label">Kirim WhatsApp</span>
+            </div>
+        </div>
+
+        <!-- ============================================ -->
+        <!--              MAIN CONTENT                    -->
+        <!-- ============================================ -->
+        <main class="reservation-main" id="mainContent">
+            
+            <!-- Page Title -->
+            <div class="page-title-section">
+                <span class="title-badge">
+                    <i class="fas fa-calendar-check"></i>
+                    Langkah 2 dari 3
+                </span>
+                <h1 class="page-title">Pilih Cabang Tujuan</h1>
+                <p class="page-subtitle">
+                    Pilih cabang Tomoro Coffee untuk mengirim reservasi Anda via WhatsApp
+                </p>
+            </div>
+
+            <!-- Two Column Layout -->
+            <div class="content-grid">
+                
+                <!-- LEFT: Reservation Summary -->
+                <div class="summary-column">
+                    <div class="summary-card" id="summaryCard">
+                        <!-- Card Header -->
+                        <div class="summary-header">
+                            <div class="summary-icon">
+                                <i class="fas fa-receipt"></i>
+                            </div>
+                            <div class="summary-title">
+                                <h2>Ringkasan Reservasi</h2>
+                                <p>Data yang akan dikirim</p>
+                            </div>
+                            <button class="edit-btn" onclick="goBack()" aria-label="Edit Reservation">
+                                <i class="fas fa-edit"></i>
+                            </button>
+                        </div>
+                        
+                        <!-- Card Body -->
+                        <div class="summary-body">
+                            <!-- Guest Info Section -->
+                            <div class="summary-section">
+                                <h3 class="section-label">
+                                    <i class="fas fa-user-circle"></i>
+                                    Informasi Tamu
+                                </h3>
+                                <div class="info-grid">
+                                    <div class="info-item">
+                                        <div class="info-icon">
+                                            <i class="fas fa-user"></i>
+                                        </div>
+                                        <div class="info-content">
+                                            <span class="info-label">Nama</span>
+                                            <span class="info-value" id="summaryName">-</span>
+                                        </div>
+                                    </div>
+                                    <div class="info-item">
+                                        <div class="info-icon">
+                                            <i class="fas fa-envelope"></i>
+                                        </div>
+                                        <div class="info-content">
+                                            <span class="info-label">Email</span>
+                                            <span class="info-value" id="summaryEmail">-</span>
+                                        </div>
+                                    </div>
+                                    <div class="info-item">
+                                        <div class="info-icon">
+                                            <i class="fas fa-phone"></i>
+                                        </div>
+                                        <div class="info-content">
+                                            <span class="info-label">Telepon</span>
+                                            <span class="info-value" id="summaryPhone">-</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Reservation Details Section -->
+                            <div class="summary-section">
+                                <h3 class="section-label">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    Detail Reservasi
+                                </h3>
+                                <div class="reservation-details-grid">
+                                    <div class="detail-card">
+                                        <div class="detail-icon date">
+                                            <i class="fas fa-calendar-day"></i>
+                                        </div>
+                                        <div class="detail-content">
+                                            <span class="detail-label">Tanggal</span>
+                                            <span class="detail-value" id="summaryDate">-</span>
+                                            <span class="detail-sub" id="summaryDay">-</span>
+                                        </div>
+                                    </div>
+                                    <div class="detail-card">
+                                        <div class="detail-icon time">
+                                            <i class="fas fa-clock"></i>
+                                        </div>
+                                        <div class="detail-content">
+                                            <span class="detail-label">Waktu</span>
+                                            <span class="detail-value" id="summaryTime">-</span>
+                                        </div>
+                                    </div>
+                                    <div class="detail-card">
+                                        <div class="detail-icon guests">
+                                            <i class="fas fa-users"></i>
+                                        </div>
+                                        <div class="detail-content">
+                                            <span class="detail-label">Jumlah Tamu</span>
+                                            <span class="detail-value" id="summaryGuests">-</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Special Request Section -->
+                            <div class="summary-section message-section" id="messageSection" style="display: none;">
+                                <h3 class="section-label">
+                                    <i class="fas fa-comment-alt"></i>
+                                    Permintaan Khusus
+                                </h3>
+                                <div class="message-box">
+                                    <p id="summaryMessage">-</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Card Footer -->
+                        <div class="summary-footer">
+                            <div class="footer-note">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Data Anda aman dan hanya digunakan untuk reservasi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- RIGHT: Branch Selection -->
+                <div class="branches-column">
+                    <div class="branches-section">
+                        <h2 class="branches-title">
+                            <i class="fas fa-store-alt"></i>
+                            Pilih Cabang
+                        </h2>
+                        <p class="branches-subtitle">
+                            Klik cabang untuk mengirim reservasi via WhatsApp
+                        </p>
+                        
+                        <!-- Branch Cards -->
+                        <div class="branch-cards-container">
+                            
+                            <!-- Branch 1: Pangkalpinang -->
+                            <div class="branch-card" data-branch="pangkalpinang" onclick="selectBranch('pangkalpinang')" tabindex="0">
+                                <!-- Recommended Badge -->
+                                <div class="branch-recommended">
+                                    <i class="fas fa-star"></i>
+                                    <span>Main Branch</span>
+                                </div>
+                                
+                                <!-- Branch Image -->
+                                <div class="branch-image">
+                                    <img src="assets/images/City Hall.jpg" alt="Tomoro Coffee Pangkalpinang">
+                                    <div class="branch-overlay">
+                                        <div class="branch-status open">
+                                            <span class="status-dot"></span>
+                                            <span>Buka Sekarang</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Branch Content -->
+                                <div class="branch-content">
+                                    <h3 class="branch-name">TOMORO COFFEE-City Hall</h3>
+                                    
+                                    <div class="branch-info-list">
+                                        <div class="branch-info-item">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            <span>City Hall, Komp. Perkantoran Gubernur, Jl. Pulau Bangka Blok B17, Air Itam, Kec. Bukitintan, Kota Pangkal Pinang, Kepulauan Bangka Belitung 33149</span>
+                                        </div>
+                                        <div class="branch-info-item">
+                                            <i class="fab fa-whatsapp"></i>
+                                            <span>+62 813-6543-3777</span>
+                                        </div>
+                                        <div class="branch-info-item">
+                                            <i class="fas fa-clock"></i>
+                                            <span>06:45 - 23:00</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Branch Facilities -->
+                                    <div class="branch-facilities">
+                                        <span class="facility" title="Free WiFi">
+                                            <i class="fas fa-wifi"></i>
+                                        </span>
+                                        <span class="facility" title="Parking">
+                                            <i class="fas fa-parking"></i>
+                                        </span>
+                                        <span class="facility" title="AC">
+                                            <i class="fas fa-snowflake"></i>
+                                        </span>
+                                        <span class="facility" title="Power Outlet">
+                                            <i class="fas fa-plug"></i>
+                                        </span>
+                                        <span class="facility" title="Delivery">
+                                            <i class="fas fa-motorcycle"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                
+                                <!-- Branch Action -->
+                                <div class="branch-action">
+                                    <button class="send-wa-btn">
+                                        <div class="btn-bg"></div>
+                                        <i class="fab fa-whatsapp"></i>
+                                        <span>Kirim via WhatsApp</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                                
+                                <!-- Selection Indicator -->
+                                <div class="selection-ring"></div>
+                            </div>
+                            
+                            <!-- Branch 2: Sungailiat -->
+                            <div class="branch-card" data-branch="sungailiat" onclick="selectBranch('sungailiat')" tabindex="0">
+                                <!-- Branch Image -->
+                                <div class="branch-image">
+                                    <img src="assets/images/Alun Alun.jpg" alt="Tomoro Coffee Sungailiat">
+                                    <div class="branch-overlay">
+                                        <div class="branch-status open">
+                                            <span class="status-dot"></span>
+                                            <span>Buka Sekarang</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Branch Content -->
+                                <div class="branch-content">
+                                    <h3 class="branch-name">TOMORO COFFE-Alun Alun Taman Merdeka Pangkalpinang</h3>
+                                    
+                                    <div class="branch-info-list">
+                                        <div class="branch-info-item">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            <span>Jl. Merdeka, Batin Tikal, Kec. Taman Sari, Kota Pangkal Pinang, Kepulauan Bangka Belitung 33684</span>
+                                        </div>
+                                        <div class="branch-info-item">
+                                            <i class="fab fa-whatsapp"></i>
+                                            <span>+62 821-8152-1691 </span>
+                                        </div>
+                                        <div class="branch-info-item">
+                                            <i class="fas fa-clock"></i>
+                                            <span>06:00 - 00:00</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Branch Facilities -->
+                                    <div class="branch-facilities">
+                                        <span class="facility" title="Free WiFi">
+                                            <i class="fas fa-wifi"></i>
+                                        </span>
+                                        <span class="facility" title="Parking">
+                                            <i class="fas fa-parking"></i>
+                                        </span>
+                                        <span class="facility" title="AC">
+                                            <i class="fas fa-snowflake"></i>
+                                        </span>
+                                        <span class="facility" title="Outdoor Area">
+                                            <i class="fas fa-tree"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                
+                                <!-- Branch Action -->
+                                <div class="branch-action">
+                                    <button class="send-wa-btn">
+                                        <div class="btn-bg"></div>
+                                        <i class="fab fa-whatsapp"></i>
+                                        <span>Kirim via WhatsApp</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                                
+                                <!-- Selection Indicator -->
+                                <div class="selection-ring"></div>
+                            </div>
+                            
+                        </div>
+                        
+                        <!-- Quick Info -->
+                        <div class="quick-info">
+                            <div class="quick-info-item">
+                                <i class="fas fa-bolt"></i>
+                                <span>Konfirmasi instan via WhatsApp</span>
+                            </div>
+                            <div class="quick-info-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Tidak ada biaya reservasi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </main>
+
+        <!-- ============================================ -->
+        <!--              NO DATA STATE                   -->
+        <!-- ============================================ -->
+        <div class="no-data-state" id="noDataState" style="display: none;">
+            <div class="no-data-content">
+                <div class="no-data-illustration">
+                    <div class="empty-calendar">
+                        <div class="calendar-header"></div>
+                        <div class="calendar-body">
+                            <i class="fas fa-calendar-xmark"></i>
+                        </div>
+                    </div>
+                </div>
+                <h2>Data Reservasi Tidak Ditemukan</h2>
+                <p>Sepertinya Anda belum mengisi form reservasi atau data sudah kadaluarsa.</p>
+                <div class="no-data-actions">
+                    <a href="index.html#contact" class="primary-btn">
+                        <i class="fas fa-calendar-plus"></i>
+                        <span>Buat Reservasi Baru</span>
+                    </a>
+                    <a href="index.html" class="secondary-btn">
+                        <i class="fas fa-home"></i>
+                        <span>Kembali ke Beranda</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================================ -->
+        <!--                  FOOTER                      -->
+        <!-- ============================================ -->
+        <footer class="reservation-footer">
+             <div class="footer-content">
+                <div class="footer-brand">
+                    <i class="fas fa-mug-hot"></i>
+                    <span>Tomoro Coffee Bangka</span>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html#menu">Menu</a>
+                    <a href="index.html#location">Lokasi</a>
+                    <a href="index.html#contact">Kontak</a>
+                </div>
+                <p class="footer-copyright">
+                    &copy; 2025 Tomoro Coffee. All rights reserved.
+                </p>
+            </div>
+        </footer>
+        
+    </div>
+
+    <!-- ============================================ -->
+    <!--              SENDING MODAL                   -->
+    <!-- ============================================ -->
+    <div class="sending-modal" id="sendingModal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <!-- Animation Container -->
+            <div class="modal-animation">
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <div class="wa-header">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>WhatsApp</span>
+                        </div>
+                        <div class="wa-chat">
+                            <div class="chat-bubble sending">
+                                <div class="bubble-content">
+                                    <span class="typing-dots">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Flying Message -->
+                <div class="flying-message">
+                    <i class="fas fa-paper-plane"></i>
+                </div>
+            </div>
+            
+            <!-- Modal Text -->
+            <div class="modal-text">
+                <h3>Mengarahkan ke WhatsApp</h3>
+                <p>Cabang: <strong id="modalBranchName">-</strong></p>
+            </div>
+            
+            <!-- Progress Bar -->
+            <div class="modal-progress">
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <span class="progress-text">Menyiapkan pesan...</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!--              HELP MODAL                      -->
+    <!-- ============================================ -->
+    <div class="help-modal" id="helpModal">
+        <div class="modal-backdrop" onclick="closeHelpModal()"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeHelpModal()">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <div class="help-header">
+                <div class="help-icon">
+                    <i class="fas fa-question-circle"></i>
+                </div>
+                <h3>Butuh Bantuan?</h3>
+            </div>
+            
+            <div class="help-body">
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-chevron-right"></i>
+                            <span>Bagaimana cara reservasi?</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Pilih salah satu cabang, kemudian klik tombol "Kirim via WhatsApp". Anda akan diarahkan ke WhatsApp dengan pesan yang sudah terisi otomatis.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-chevron-right"></i>
+                            <span>Apakah ada biaya reservasi?</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Tidak ada biaya untuk melakukan reservasi. Anda hanya perlu datang sesuai jadwal dan memesan menu favorit Anda.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-chevron-right"></i>
+                            <span>Bagaimana jika ingin mengubah data?</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Klik tombol "Edit" pada bagian ringkasan reservasi untuk kembali ke form dan mengubah data Anda.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="help-contact">
+                    <p>Masih butuh bantuan?</p>
+                    <div class="contact-options">
+                        <a href="https://wa.me/6281365433777" target="_blank" class="contact-btn whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>Chat WhatsApp</span>
+                        </a>
+                        <a href="tel:0813-6543-3777" class="contact-btn phone">
+                            <i class="fas fa-phone"></i>
+                            <span>Telepon</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!--              TOAST NOTIFICATION              -->
+    <!-- ============================================ -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Scripts -->
+    <script src="js/reservation.js"></script>
+</body>
+</html>
