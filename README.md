@@ -1,7 +1,5 @@
 <div align="center">
 
-<img src="./assets/icons/tomoro.png" alt="Tomoro Coffee Logo" width="150" />
-
 # ☕ TOMORO COFFEE BANGKA
 
 ### Premium Coffee Experience Website
